@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS products ( id varchar PRIMARY KEY, productname varchar NOT NULL, stock INT NOT NULL, price INT NOT NULL);
