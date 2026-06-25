@@ -8,8 +8,10 @@ import (
 	_ "github.com/jackc/pgx/v5/stdlib"
 )
 
+// DB es la conexión global a la base de datos utilizada por toda la aplicación.
 var DB *sql.DB
 
+// ConnectDB abre una conexión con PostgreSQL y verifica que la base de datos responda.
 func ConnectDB() {
 	// postgres://usuario:password@host:puerto/basededatos?sslmode=disable
 	dsn := "postgres://mikoushi:mikoushi@localhost:5432/ecommercedb?sslmode=disable"
